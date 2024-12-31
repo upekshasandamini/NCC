@@ -5,27 +5,27 @@ pipeline {
         stage('SCM Checkout') {
             steps {
                 retry(3) {
-                    git branch: 'main', url: 'https://github.com/your-username/php-project-repo'
+                    git branch: 'main', url: 'https://github.com/upekshasandamini/NCC'
                 }
             }
         }
         stage('Build Docker Image') {
             steps {  
-                bat 'docker build -t yourdockerhubusername/phpapp:%BUILD_NUMBER% .'
+                bat 'docker build -t gscomp198/phpapp:%BUILD_NUMBER% .'
             }
         }
         stage('Login to Docker Hub') {
             steps {
-                withCredentials([string(credentialsId: 'docker-hub-credentials', variable: 'DOCKER_PASSWORD')]) {
+                withCredentials([string(credentialsId: 'dockerhub', variable: 'dockerpassword')]) {
                     script {
-                        bat "docker login -u yourdockerhubusername -p %DOCKER_PASSWORD%"
+                        bat "docker login -u gscomp198 -p Upeksha1997."
                     }
                 }
             }
         }
         stage('Push Image') {
             steps {
-                bat 'docker push yourdockerhubusername/phpapp:%BUILD_NUMBER%'
+                bat 'docker push gscomp198/phpapp:%BUILD_NUMBER%'
             }
         }
     }
