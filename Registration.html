@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style_signUp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <form action="Registration.php" method="POST">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" class="form-controller" name="full_name" placeholder="Full Name" required>
+                    <i class='bx bx-user'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" class="form-controller" name="user_name" placeholder="User Name" required>
+                    <i class='bx bx-user'></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="email" class="form-controller" name="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-field">
+                    <input type="number" class="form-controller" name="contact_no" placeholder="Contact Number"
+                        required>
+                    <i class='bx bx-phone'></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="password" class="form-controller" name="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="form-controller" name="confirmed_PW" placeholder="Confirm Password"
+                        required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="agree_terms" required> I hereby declare that the above information
+                    provided is true and correct.
+                </label>
+            </div>
+            <button type="submit" value="Register" name="submit" class="btn">Register</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

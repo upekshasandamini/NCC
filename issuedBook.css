@@ -1,0 +1,158 @@
+/* General body and layout styles */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #343a40;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffc107 !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Dropdown styles */
+.navbar .navbar-nav .dropdown-menu {
+    background-color: #343a40;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Table styles */
+.table-bordered {
+    border: 2px solid #007bff;
+    border-radius: 0.5rem;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-bordered th,
+.table-bordered td {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+    border: 1px solid #007bff;
+}
+
+.table-bordered th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.table-bordered td {
+    background-color: #f9f9f9;
+}
+
+.table-bordered tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Marquee styles */
+.marquee {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #28a745;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h4 {
+    font-size: 2.2rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Additional Container Styles */
+.container-fluid {
+    padding: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Form and Button Styles */
+form input,
+form select,
+form button {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles for small devices */
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
